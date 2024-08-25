@@ -1,0 +1,257 @@
+#navbar-wrapper.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 1s ease;
+    /* You can add a fadeInDown animation */
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    height: 80px;
+    align-items: center;
+    padding: 0px 60px;
+    padding-left: 20px;
+    z-index: 9;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    .logo {
+        background: white;
+        border-radius: 5px;
+        padding: 0px 10px;
+
+        .header-image-logo {
+            width: 150px !important;
+            height: 50px !important;
+        }
+    }
+
+    .menu-container {
+        display: flex;
+        justify-content: flex-start;
+        gap: 40px;
+        align-items: center;
+        height: fit-content;
+
+        p {
+            // background: green;
+            color: #000080 !important;
+            margin: 0px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        p:hover {
+            border-bottom: 2px solid #4caf50;
+            color: #4caf50 !important;
+            /* Change to the desired color and style */
+        }
+
+        .active {
+            border-bottom: 2px solid #4caf50;
+            color: #4caf50 !important;
+        }
+    }
+
+    .profile-picture-btn {
+      width: 50px;
+      height: 50px;
+      overflow: hidden;
+      
+      .profile-picture-container {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        background-color: #fff; // Set the background color to white or your desired color
+  
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 50%;  // Ensure the image itself is also rounded
+        }
+      }
+    }
+}
+@media (max-width: 767px) {
+    .trainer-Pro {
+      display: block !important;
+    }
+  
+    .card.rounded.trainer-profile-card {
+      width: 60% !important;
+      margin: auto;
+    }
+  
+    .card.rounded.trainer-profile-card.Select {
+      margin-top: 10px !important;
+    }
+  
+    .card.rounded.trainer-profile-card.Select.Recent.Student {
+      width: 100% !important;
+      margin: auto;
+    }
+  
+    .card.rounded.trainer-profile-card.Select.Working.Hour {
+      width: 60% !important;
+      margin: auto;
+    }
+  
+    // .calendar-container{
+    //   margin: 45px !important;
+    //   padding: 0;
+    // }
+    .Recent-Heading {
+      font-size: 16px;
+    }
+  
+    .rc-time-picker.ml-2.mt-2.rounded {
+      margin-left: 0 !important;
+      margin-top: 0 !important;
+  
+    }
+  
+    .col-12.Save-button {
+      margin-top: 0 !important;
+    }
+  
+    #timezone-offset {
+      margin-left: 0 !important;
+      margin-top: 0 !important;
+    }
+  
+    .ml-2.From {
+      margin-bottom: 0 !important;
+      margin-top: 5px !important;
+    }
+  
+    .ml-2.To {
+      margin-bottom: 0 !important;
+      margin-top: 5px !important;
+    }
+  
+    .ml-2.TimeZone {
+      margin-bottom: 0 !important;
+      padding-top: 10px !important;
+    }
+  
+    .calendar-container {
+      width: 95% !important;
+      margin-top: 16px !important;
+      margin-left: 11px !important;
+    }
+  
+    .card-body.change-number {
+      margin: 4px !important;
+      margin-left: 10px !important;
+    }
+  
+    .timezone_offset {
+      width: 50vw !important;
+    }
+  
+    .welcome-text {
+      text-align: center;
+    }
+  
+    .Report {
+      margin-top: 0 !important;
+    }
+  
+    .Content-Trainer {
+      display: block !important;
+    }
+  
+    .bookings {
+      padding: 0 !important;
+    }
+  
+    .custom-sidebar-content-booking {
+      width: 80% !important;
+    }
+  
+    .image-gallery {
+      width: 100% !important;
+      justify-content: center !important;
+      overflow: scroll !important;
+    }
+  
+    .Stude-img {
+      width: 19vw !important;
+    }
+  
+    .Recent-Heading {
+      font-size: 15px !important;
+    }
+  
+    .card-body.Recent {
+      padding: 0 !important;
+    }
+  
+    
+  
+    #Nav-T {
+      margin: 11px !important;
+    }
+  
+    // .Trainer-box-1 {
+    //   width: 40% !important;
+    // }
+  
+    .card-body-Share-clip {
+      padding: 2px !important;
+    }
+  
+    .Invite-freind {
+      padding: 16px !important;
+    }
+  
+    .btn.btn-primary.btn-sm-Change-Picture {
+      padding: 11px 6px !important;
+    }
+    .trainer-recommended.Slider{
+        width: 80% !important;
+        margin: auto !important;
+    }
+
+  
+  }
+  @media (max-width: 768px) {
+    .Recommended{
+        display: block !important;
+    }
+    .recent-slider.slider-container.recent-chat{
+        width: 90% !important;
+    }
+    .trainer-recommended.Slider{
+        width: 85% !important;
+    }
+    .dropdown.options.open{
+        max-width: 450px !important;
+    }
+  }
+#get-navbar-tabs{
+  width:calc(100vw - 110px);
+}
+  
+  
